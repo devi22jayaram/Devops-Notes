@@ -165,3 +165,113 @@ In this chapter you learned:
 - Common commands
 - Practical examples
 - Production use cases
+---
+
+# 🧪 Practice Task
+
+## Objective
+
+Practice creating and extracting archive files using `tar` and `zip`.
+
+### Task 1: Create a Project Directory
+
+```bash
+mkdir Project
+cd Project
+```
+
+### Task 2: Create Three Files
+
+```bash
+touch index.html
+touch style.css
+touch app.js
+```
+
+Verify the files:
+
+```bash
+ls
+```
+
+Expected output:
+
+```
+app.js
+index.html
+style.css
+```
+
+### Task 3: Create a TAR Archive
+
+```bash
+cd ..
+tar -cvf Project.tar Project/
+```
+
+Verify:
+
+```bash
+ls
+```
+
+### Task 4: Create a TAR.GZ Archive
+
+```bash
+tar -czvf Project.tar.gz Project/
+```
+
+### Task 5: Create a ZIP Archive
+
+```bash
+zip -r Project.zip Project/
+```
+
+### Task 6: Extract the TAR Archive
+
+```bash
+mkdir Tar_Test
+tar -xvf Project.tar -C Tar_Test
+```
+
+### Task 7: Extract the ZIP Archive
+
+```bash
+mkdir Zip_Test
+unzip Project.zip -d Zip_Test
+```
+
+### Task 8: Verify the Extracted Files
+
+```bash
+tree Tar_Test
+```
+
+or
+
+```bash
+find Tar_Test
+```
+
+Expected structure:
+
+```
+Project/
+├── app.js
+├── index.html
+└── style.css
+```
+
+---
+
+# ✅ Challenge
+
+Without referring to the notes:
+
+- Create a folder named `Website`
+- Add four files inside it
+- Compress it using both `tar.gz` and `zip`
+- Extract both archives
+- Verify the contents
+
+If you can complete this without errors, you've mastered the basics of `tar` and `zip`.
