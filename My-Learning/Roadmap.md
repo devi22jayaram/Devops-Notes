@@ -1,171 +1,361 @@
-A roadmap for the next 6–12 months
-1. Become an Expert in Linux (Highest Priority)
+# 🚀 DevOps Learning Roadmap
 
-Don't stop at basic commands. Learn:
+## 📖 Overview
 
-systemd (services)
-Networking
-Storage management (LVM, RAID)
-SSH hardening
-Log analysis
-Bash scripting
-Performance tuning
-Security hardening
+This repository contains my personal learning roadmap to become a skilled Linux Administrator and DevOps Engineer. It covers Linux administration, cloud technologies, containerization, automation, monitoring, security, and real-world projects.
 
-Goal:
+**Goal:** Build strong practical skills by learning concepts, practicing hands-on labs, and working on production-like projects.
 
-Troubleshoot almost any Linux server confidently.
+---
 
-2. Master Nginx
+# 🗺️ Learning Roadmap
 
-You already use it.
+## Phase 1: Advanced Linux Administration
 
-Now learn:
+### Goal
 
-Reverse Proxy
-Load Balancer
-SSL Optimization
-Rate Limiting
-Caching
-Compression
-Multiple virtual hosts
-Zero downtime deployment
-3. Learn Docker
+Become confident in troubleshooting and managing Linux servers.
 
-Every DevOps engineer should know Docker.
+### Topics
 
-Topics:
+- System Services (systemd & systemctl)
+- Linux Networking
+- Storage Management (LVM & RAID)
+- SSH Configuration & Hardening
+- File Systems
+- Log Analysis
+- Bash Scripting
+- Performance Monitoring
+- Security Hardening
 
-Docker Images
-Containers
-Dockerfile
-Docker Compose
-Volumes
-Networks
-Multi-stage builds
+### Outcome
 
-Project:
+- Troubleshoot Linux servers independently.
+- Manage users, services, networking, storage, and security.
+- Automate administrative tasks using Bash.
 
-Deploy
+---
 
-React
-↓
-Node.js
-↓
-MongoDB
+## Phase 2: Master Nginx
 
-using Docker Compose.
+### Goal
 
-4. Learn Kubernetes
+Understand how Nginx works in production environments.
 
-After Docker.
+### Topics
 
-Topics:
+- Web Server Basics
+- Reverse Proxy
+- Load Balancing
+- SSL/TLS Configuration
+- Rate Limiting
+- Compression (Gzip)
+- Caching
+- Virtual Hosts
+- Zero Downtime Deployment
 
-Pods
-Deployments
-Services
-ConfigMaps
-Secrets
-Ingress
-Persistent Volumes
-Helm
-5. Master AWS
+### Mini Projects
 
-Don't stop at EC2.
+- Deploy a static website.
+- Configure Nginx as a reverse proxy for a Node.js application.
+- Secure a website using Let's Encrypt SSL.
+- Configure multiple virtual hosts.
 
-Learn:
+---
 
-IAM
-VPC
-S3
-Route 53
-CloudFront
-ALB
-Auto Scaling
-RDS
-EFS
-CloudWatch
-Systems Manager
-Lambda
-ECS
-EKS
-6. Learn CI/CD
+## Phase 3: Learn Docker
 
-This is one of the biggest gaps for many engineers.
+### Goal
 
-Learn:
+Containerize applications and manage containerized workloads.
 
-GitHub Actions
-Jenkins
-GitLab CI
-Deploy automatically
-Rollback
-Testing pipeline
-7. Learn Infrastructure as Code
+### Topics
 
-Use:
+- Docker Installation
+- Docker Images
+- Containers
+- Dockerfile
+- Docker Compose
+- Volumes
+- Networks
+- Multi-stage Builds
+- Docker Hub
 
-Terraform
+### Mini Projects
 
-Create:
+- Containerize a Node.js application.
+- Deploy a MERN stack using Docker Compose.
+- Create custom Docker images.
+- Build multi-container applications.
 
-EC2
-VPC
-Security Groups
-Load Balancer
+---
 
-using code.
+## Phase 4: Learn Kubernetes
 
-8. Monitoring
+### Goal
 
-Learn:
+Deploy and manage containerized applications at scale.
 
-Prometheus
-Grafana
-Node Exporter
-Alertmanager
-9. Logging
+### Topics
 
-Learn:
+- Kubernetes Architecture
+- Pods
+- ReplicaSets
+- Deployments
+- Services
+- ConfigMaps
+- Secrets
+- Ingress
+- Persistent Volumes
+- Helm Charts
 
-ELK Stack
-Loki
-Grafana Logs
-10. Security
+### Mini Projects
 
-Learn:
+- Deploy an Nginx application.
+- Deploy a MERN application on Kubernetes.
+- Configure Ingress Controller.
+- Use ConfigMaps and Secrets.
 
-SSH Security
-Fail2Ban
-UFW
-WAF
-Cloudflare Security
-Secrets Management
-Build a Portfolio
+---
 
-Instead of only writing notes, build real projects.
+## Phase 5: Master AWS
 
-Examples:
+### Goal
 
-Deploy MERN App
-Dockerize MERN
-Kubernetes Deployment
-Jenkins Pipeline
-Terraform AWS Infrastructure
-Nginx Reverse Proxy
-Monitoring Stack
-Production Backup Scripts
+Learn cloud infrastructure and production deployments.
 
-These projects will strengthen your resume and interviews.
+### Topics
 
-Get Certifications (Optional but Valuable)
+- IAM
+- EC2
+- VPC
+- Security Groups
+- Elastic IP
+- S3
+- Route 53
+- CloudFront
+- Application Load Balancer
+- Auto Scaling
+- RDS
+- EFS
+- CloudWatch
+- Systems Manager
+- Lambda
+- ECS
+- EKS
 
-After gaining practical experience, consider:
+### Mini Projects
 
-AWS Certified Solutions Architect – Associate
-AWS Certified Developer – Associate
-AWS Certified SysOps Administrator – Associate
-Docker Certified Associate (if available)
-Certified Kubernetes Application Developer (CKAD)
-Certified Kubernetes Administrat
+- Host a static website on S3.
+- Deploy a Node.js application on EC2.
+- Configure an Application Load Balancer.
+- Implement Auto Scaling.
+- Monitor EC2 using CloudWatch.
+
+---
+
+## Phase 6: CI/CD
+
+### Goal
+
+Automate software build, testing, and deployment.
+
+### Topics
+
+- GitHub Actions
+- Jenkins
+- GitLab CI/CD
+- Pipeline Design
+- Automated Deployment
+- Rollback Strategy
+- Testing Pipeline
+
+### Mini Projects
+
+- CI/CD for a Node.js application.
+- Automatic deployment to AWS EC2.
+- Build and push Docker images.
+- Deploy using GitHub Actions.
+
+---
+
+## Phase 7: Infrastructure as Code (IaC)
+
+### Goal
+
+Provision cloud infrastructure using code.
+
+### Topics
+
+- Terraform Basics
+- Variables
+- Modules
+- Remote State
+- AWS Provider
+
+### Resources to Create
+
+- EC2
+- VPC
+- Subnets
+- Security Groups
+- Load Balancer
+- Route Tables
+
+### Mini Projects
+
+- Provision a complete AWS environment using Terraform.
+- Deploy an EC2 instance with Security Groups.
+- Create reusable Terraform modules.
+
+---
+
+## Phase 8: Monitoring
+
+### Goal
+
+Monitor infrastructure and applications.
+
+### Topics
+
+- Prometheus
+- Grafana
+- Node Exporter
+- Alertmanager
+
+### Mini Projects
+
+- Monitor Linux server metrics.
+- Create Grafana dashboards.
+- Configure CPU and Memory alerts.
+
+---
+
+## Phase 9: Logging
+
+### Goal
+
+Centralize and analyze logs.
+
+### Topics
+
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- Loki
+- Grafana Logs
+
+### Mini Projects
+
+- Collect Nginx logs.
+- Visualize application logs.
+- Search and analyze logs.
+
+---
+
+## Phase 10: Security
+
+### Goal
+
+Secure Linux servers and cloud infrastructure.
+
+### Topics
+
+- SSH Hardening
+- Fail2Ban
+- UFW Firewall
+- Cloudflare Security
+- Web Application Firewall (WAF)
+- Secrets Management
+
+### Mini Projects
+
+- Secure an Ubuntu server.
+- Configure Fail2Ban.
+- Harden SSH configuration.
+- Configure Cloudflare WAF.
+
+---
+
+# 💼 Portfolio Projects
+
+Build real-world projects to strengthen your practical knowledge.
+
+- Linux Server Administration
+- Deploy a MERN Stack Application
+- Dockerize a MERN Application
+- Kubernetes Deployment
+- CI/CD Pipeline with GitHub Actions
+- Jenkins Automation Pipeline
+- Terraform AWS Infrastructure
+- Nginx Reverse Proxy
+- SSL Configuration with Let's Encrypt
+- Cloudflare DNS & Security
+- Monitoring Stack with Prometheus & Grafana
+- Production Backup Scripts
+- Log Analysis Dashboard
+
+---
+
+# 📜 Recommended Certifications
+
+After gaining practical experience, consider the following certifications:
+
+- AWS Certified Cloud Practitioner
+- AWS Certified Solutions Architect – Associate
+- AWS Certified Developer – Associate
+- AWS Certified SysOps Administrator – Associate
+- HashiCorp Certified: Terraform Associate
+- Certified Kubernetes Application Developer (CKAD)
+- Certified Kubernetes Administrator (CKA)
+
+---
+
+# 🛠️ Home Lab
+
+Practice everything in your own lab environment.
+
+## Suggested Setup
+
+- Ubuntu Server
+- Docker
+- Kubernetes (Minikube or Kind)
+- Nginx
+- Jenkins
+- Terraform
+- Prometheus
+- Grafana
+- Node.js
+- MongoDB
+- MySQL
+
+---
+
+# 📚 Learning Strategy
+
+For every topic:
+
+- Learn the concept.
+- Practice commands.
+- Build a mini project.
+- Troubleshoot common issues.
+- Document your learning.
+- Push updates to GitHub.
+
+---
+
+# 🎯 Final Goal
+
+Become proficient in:
+
+- Linux Administration
+- Web Servers
+- Networking
+- Cloud Computing
+- Containerization
+- Kubernetes
+- Infrastructure as Code
+- CI/CD
+- Monitoring
+- Security
+- Production Troubleshooting
+
+By following this roadmap and completing the hands-on projects, I aim to build strong practical DevOps skills suitable for real-world production environments.
